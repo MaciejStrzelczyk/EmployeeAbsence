@@ -3,12 +3,13 @@
 
 
 // Demonstrate some basic assertions.
-TEST(employeeTest, BasicAssertions) {
+TEST(Employee, employee) {
 
 //    Employee* employee = new Employee();
 
-EXPECT_STRNE("hello", "world");
+EXPECT_STRNE("hello", "word");
 // Expect equality.
 EXPECT_EQ(7 * 6, 42);
+EXPECT_STREQ("hello", "hello");
 }
 

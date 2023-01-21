@@ -12,3 +12,11 @@ add_executable(absence_app main.cpp
         src/loadAndSendFiles.cpp
         include/employeeRepository.h
         src/employeeRepository.cpp)
+
+add_subdirectory(tests/googletest-main)
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+add_executable(Google_Tests_run
+        tests/employeeTest.cpp)
+
+target_link_libraries(Google_Tests_run gtest gtest_main)
