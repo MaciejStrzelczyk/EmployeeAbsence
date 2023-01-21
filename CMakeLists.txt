@@ -12,4 +12,3 @@ add_executable(absence_app main.cpp
         src/loadAndSendFiles.cpp
         include/employeeRepository.h
         src/employeeRepository.cpp)
-
